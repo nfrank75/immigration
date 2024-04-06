@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Services {% endblock %}
+
+{% block content %}
+
+
+<div id="content" class="site-content center-relative">
+
+    <div id="services" class="section " >
+        <!-- <div class="page-title-holder " style="top: 6px">
+            <h3 class="entry-title">
+                Features
+            </h3>
+        </div> -->
+            <div class="devhead">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="container1" style="margin-top: 110px">
+                            <!-- Card -->
+                            <a href="{% url 'features' %}">
+                                <div class="card h-100">
+                                    <img src="{% static 'images/photo6.jpeg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="card-title" style="margin-top: 45px">Visa Etudiant </h2>
+                                      <p class="card-text" style="text-align: justify;margin-top: 45px">Vous voulez poursuivre vos études au Canada? nous vous accompagnons.</p>
+                                    </div>
+                                  </div>
+                            </a>
+                            <a href="{% url 'features' %}">
+                                <div class="card h-100">
+                                    <img src="{% static 'images/photo1.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h2 class="card-title" style="margin-top: 45px"> Visa travailleur</h2>
+                                      <p class="card-text" style="text-align: justify;margin-top: 45px">Travailler au Canada c'est donner une seconde chance à votre famille.
+                                    </div>
+                                  </div>
+                            </a>
+                            <a href="{% url 'features' %}">
+                                <div class="card h-100">
+                                    <img src="{% static 'images/photo4.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h2 class="card-title" style="margin-top: 45px">Visa Affaire/touriste</h2>
+                                      <p class="card-text" style="text-align: justify;margin-top: 45px">Profitez des opportunités business qu'offre le Canada ou visitez-le.</p>
+                                    </div>
+                                  </div>
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    </div>
+
+
+{% endblock %}

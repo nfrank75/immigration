@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} A Propos {% endblock %}
+
+{% block content %}
+
+<div id="content" class="site-content center-relative">
+
+<div class="devhead">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <img class="img img-product" style="width: 100%;height: 100%"
+
+                     src="https://www.thoughtco.com/thmb/ecXwD0oYdJEzLh6da-ouWm5HsqY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/national-flag-canada-lge2-56a0e57f5f9b58eba4b4f422.jpg" alt=""/>
+            
+            
+                     <div class="button-holder text-center px-4" style="display: flex; justify-content: center;">
+                        <a href="{% url 'about' %}" class="button" style="background-color: rgb(110, 69, 92)">A Propos de Nous</a>
+                    </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- devhead text and app badges-->
+                <div class="mb-5 mb-lg-0 text-center text-lg-start" style="margin-top: 125px">
+                    <h5 class="member-name"
+                        style="float: left; font-size: 50px">QU'EST CE QUI FAIT NOTRE PARTICULARITE ?</h5><br>
+                    <p class="fw-normal mb-5" style="float: left;text-align: justify">
+                        Une équipe de consultant : Canado - Camerounais   en immigration par les africains et pour les africains  <br> 
+                        Notre équipe est membre du collège  des Consultants en Immigration et en Citoyenneté du Canada (CICC).  (numéro : T506538). <br>
+                        Nous sommes véritablement passionnés des questions d'immigration, Chacun des membres de notre équipe est titulaire d'une Licence en droit et des TIC ce qui fait notre force à pouvoir examiner et traiter vos dosiers parfaitement.
+                    </p>
+                    
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Visa Touriste {% endblock %}
+
+{% block content %}
+
+<div id="content" class="site-content center-relative">
+
+    <div class="devhead">
+        <div class="container">
+            <div class="row align-items-center">
+    
+                <div class="col-lg-6">
+                    <img class="img img-product" style="width: 100%;height: 100%"
+    
+                         src="{% static 'images/visa-affaire.jpg' %}" alt=""/>
+                
+                
+                        <div class="button-holder text-center px-4" style="display: flex; justify-content: center;">
+                            <a href="{% url 'features' %}" class="button" style="background-color: rgb(110, 69, 92)">PROCESSUS VISA AFFAIRE</a>
+                        </div>
+                </div>
+    
+                <div class="col-lg-6">
+                    <!-- devhead text and app badges-->
+                    <div class="mb-5 mb-lg-0 text-center text-lg-start" style="margin-top: 125px">
+                        <h5 class="member-name"
+                            style="float: left; font-size: 50px">VISA AFFAIRE</h5><br>
+                        <p class="fw-normal mb-5" style="float: left;text-align: justify">
+                            Le Canada est une destination touristique par excellence.  <br> <br>    
+                             Chaque année prés de 35 milles touristes visitent le Canada.  <br>
+                              Les personnes qui viennent au Canada rendre visite aux membres de leur famille qui y vivent ou à des amis, faire du tourisme ou un voyage d’affaire sont des demandeurs de visa de résident temporaire. <br>  
+                               Les ressortissants de certains pays sont dispensés de demander un visa pour entrer au Canada. <br> 
+                                Ces dernières années, le nombre de demandes de visas visiteur a explosé. <br>
+                                 L’agent d’immigration a un pouvoir discrétionnaire assez large. <br>
+                                  Il peut donc le refuser même si vous disposez de moyens financiers impressionnants. <br>  
+                                   Il est recommandé de bien monter le dossier. <br>
+                                    Le présenter de façon claire, répondre aux questions avec précision et fournir les documents appropriés susceptibles de convaincre le décideur. <br> 
+
+                                Notre rôle consiste à vous aider à préparer un dossier qui pourra capter l’attention de l’agent décideur du bureau des visas. <br> <br>
+                                Une fois le visa touriste obtenu vous devez respecter les conditions qui lui sont associées. <br>     Le visa peut être a entrée unique ou a entrées multiples. <br>
+                                 De toutes les façons, comme visiteur, vous ne pouvez rester au Canada pour plus de six mois. <br> <br> 
+                                  La loi vous offre la possibilité de demander une prorogation de visa une fois au Canada. <br> 
+
+                                Toute personne (étudiant, chômeur, travailleur, etc..) qui le désire peut demander un visa dans la catégorie de visiteur.  <br>
+                                 Si le visa est refusé vous avez la possibilité de faire une nouvelle demande. <br>  Il n’existe pas de processus d’appel en la matière.
+                        </p>
+                        
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+    </div> 
+
+
+{% endblock %}

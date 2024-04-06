@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Visa Travailleur {% endblock %}
+
+{% block content %}
+
+<div id="content" class="site-content center-relative">
+
+    <div class="devhead">
+        <div class="container">
+            <div class="row align-items-center">
+    
+                <div class="col-lg-6">
+                    <img class="img img-product" style="width: 100%;height: 100%"
+    
+                         src="{% static 'images/visa-travailleur.jpg' %}" alt=""/>
+                
+                
+                         <div class="button-holder text-center px-4" style="display: flex; justify-content: center;">
+                            <a href="{% url 'features' %}" class="button" style="background-color: rgb(110, 69, 92)">PROCESSUS VISA TRAVAIL</a>
+                        </div>
+                </div>
+    
+                <div class="col-lg-6">
+                    <!-- devhead text and app badges-->
+                    <div class="mb-5 mb-lg-0 text-center text-lg-start" style="margin-top: 125px">
+                        <h5 class="member-name"
+                            style="float: left; font-size: 50px">VISA TRAVAILLEUR</h5><br>
+                        <p class="fw-normal mb-5" style="float: left;text-align: justify">
+                            Le Canada accueille chaque année un nombre impressionnant de travailleurs dans le but de combler ses besoins en main d’œuvre.  <br>
+                             Au bout d’un processus légal de demande de visa travailleur, plusieurs personnes arrivent au Canada munies d’une résidence permanente qui leur donne les mêmes droits qu’un citoyen canadien sauf le droit de vote. <br>
+                              Ils peuvent donc travailler sans avoir besoin d’un permis de travail. Ils ont le droit de rester au canada en permanence. La procédure peut durer moins de six mois dans certains cas. Il existe une multitude de programme d’immigration permanente. <br><br><br>
+
+                            Le plus populaire actuellement est celui de TRAVAILLEURS QUALIFIÉS DANS LE CADRE D’ENTREE EXPRESS (visa au bout de six mois lorsque l’on est sélectionné). L’entrée express est mise en œuvre par le biais des programmes suivants : <br> <br>
+
+                            le programme des travailleurs qualifiés (fédéral) les travailleurs des métiers spécialisés (fédéral)le programme de l’expérience canadienne. <br>  Les programmes des candidats des provinces (PCP) peut aussi puiser dans le bassin d’entrée express pour satisfaire son besoin en main d’œuvre. <br>
+                            Pour savoir si un candidat est admissible dans le bassin d’entrée express, il importe de faire une analyse de son curriculum vitae. <br>
+                             Ses compétences professionnelles, sociales, linguistiques et académiques seront étudiées. <br>
+                              L’admission dans le bassin est une étape importante mais qui ne garantit pas la sélection futur du candidat. <br>
+                        </p>
+                        
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+
+{% endblock %}

@@ -58,3 +58,10 @@ def contact(request):
         #     form = ContactForm()
 
     return render(request, 'contact.html')
+
+
+def tcf_canada(request):
+    return render(request, 'tcf_canada.html')
+    
+def tcf_quebec(request):
+    return render(request, 'tcf_quebec.html')

@@ -49,8 +49,14 @@
               crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
         <style>
-        body{ background: rgb(110, 69, 92) }
-        .site-content { background: #fff; width: 100% }
+            body{ 
+                background: rgb(110, 69, 92) 
+            }
+
+            .site-content { 
+                background: #fff; width: 100% 
+            }
+
             .btn-lang:focus, .btn-lang:hover {
                 color: #fff !important;
                 text-decoration: none;
@@ -90,6 +96,8 @@
                 margin-top: 30px;
                 color: white;
             }
+
+            
 
             
             
@@ -144,6 +152,15 @@
                     </li>
                     <li>
                         <a href="{% url 'formation' %}">Formation</a>
+                        <ul> 
+                            <li>
+                                <a href="{% url 'tcf_canada' %}">TCF Canada</a>
+                            </li>
+                            
+                            <li>
+                                <a href="{% url 'tcf_quebec' %}">TCF Quebeec</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="{% url 'contact' %}">Contact</a>

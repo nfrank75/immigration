@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import (home, about, contact, features, formation, visa_affaire,
-                    visa_etude, visa_touriste, visa_travailleur, visa_asile, confidentialite)
+                    visa_etude, visa_touriste, visa_travailleur, visa_asile, confidentialite,
+                    tcf_canada, tcf_quebec)
 
 urlpatterns = [
     path('', home, name='home'),
@@ -14,4 +15,8 @@ urlpatterns = [
     path('visa_travailleur', visa_travailleur, name='visa_travailleur'),
     path('visa_asile', visa_asile, name='visa_asile'),
     path('confidentialite', confidentialite, name='confidentialite'),
+    path('tcf_canada', tcf_canada, name='tcf_canada'),
+    path('tcf_quebec', tcf_quebec, name='tcf_quebec'),
 ]
+
+

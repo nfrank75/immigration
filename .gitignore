@@ -1,1 +1,8 @@
+gitignore
+
 .vercel
+app/__pycache__/
+immigration/__pycache__/
+venv 
+env
+

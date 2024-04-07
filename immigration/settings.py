@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-9y&)!2!@wi5h9+)@w^k@67mk(th%#yar@9@l4!pc3-4+a*$2+!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -79,9 +79,13 @@ WSGI_APPLICATION = 'immigration.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'immigration_db',
+        'USER': 'nfrank',
+        'PASSWORD': 'nfrank',
+        'HOST': 'localhost',
+        'PORT': '5433',
+    },
 }
 
 
@@ -129,3 +133,6 @@ MEDIA_URL='/images/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'templates')
+
+STATICFILES_DIRS = [BASE_DIR/'static',]
+STATIC_ROOT = BASE_DIR/'staticfiles'
